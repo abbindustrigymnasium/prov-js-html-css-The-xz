@@ -11,6 +11,15 @@
 
     <script>
         // Här ska din JavaScript kod vara
+        let numbers = [12, 25, 37, 43, 59, 61]
+
+        let evens = numbers.filter(function(x) {
+            if (x % 2 != 0 && x != 0) {
+                return x;
+            }
+        })
+
+        console.log(evens);
 
 
     </script>

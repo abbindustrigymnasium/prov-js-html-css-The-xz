@@ -3,13 +3,28 @@
 
 <head>
     <title>Fråga 9</title>
+
 </head>
 
 <body>
     <!-- Här ska din HTML kod vara -->
+    <div id="container">
+        <form action="" id="form">
+          <input type="url" name="adress" id="adress">
+          <button type="submit" onclick="showImage()">Submit</button>'
+          <img src="showImage()" />
+        </form>
+      </div>
 
     <script>
         // Här ska din JavaScript kod vara
+        function showImage() {
+            event.preventDefault();
+            let adress = document.getElementById("adress");
+            console.log(adress.value);
+            return adress.value
+        }
+        
 
 
     </script>
